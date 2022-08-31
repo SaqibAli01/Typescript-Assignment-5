@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Saqib Ali </title>
+
+</head>
+
+<body>
+    <h1>If-else exercise</h1>
+
+    <h1>1. Write a ts program to find maximum between two numbers.</h1>
+    <div class="Question_show">
+        var userinputNum1: string | null = prompt("Please Enter Number A"); <br>
+        var userinputNum2: string | null = prompt("Please Enter Number B"); <br>
+        if (userinputNum1 && userinputNum2) { <br>
+
+        var Num1: number = parseInt(userinputNum1) <br>
+        var Num2: number = parseInt(userinputNum2) <br>
+
+        if (Num1 > Num2) { <br>
+        console.log("Number One Is maximum", Num1); <br>
+        alert("Number One Is maximum " + Num1); <br>
+        } <br>
+        else if (Num1 < Num2) { <br>
+            console.log("Number Two Is maximum", Num2); <br>
+            alert("Number Two Is maximum " + Num2); <br>
+            } <br>
+
+            else { <br>
+            console.log("Number Two Is maximum",Num2); <br>
+            alert("Number One " + Num1 + " Number Two " + Num2 + " Both Number is equal"); <br>
+            } <br>
+            } <br>
+    </div>
+    <br>
+    <button onclick="Question1()">Click Me</button>
+
+    <hr>
+    <!-- ---------------------------------------------------------------------  -->
+
+
+    <h1>2. Write a ts program to find maximum between three numbers.</h1>
+    <div class="Question_show">
+
+        var userinputNum1: string | null = prompt("Please Enter Number A"); <br>
+        var userinputNum2: string | null = prompt("Please Enter Number B"); <br>
+        var userinputNum3: string | null = prompt("Please Enter Number C"); <br>
+
+        if (userinputNum1 && userinputNum2 && userinputNum3) { <br>
+
+        var Num1: number = parseInt(userinputNum1); <br>
+        var Num2: number = parseInt(userinputNum2); <br>
+        var Num3: number = parseInt(userinputNum3); <br>
+
+        if (Num1 > Num2 && Num1 > Num3) { <br>
+        console.log("Number One Is maximum", Num1); <br>
+        alert("Number One Is maximum " + Num1); <br>
+        } <br>
+
+
+        else if (Num2 > Num1 && Num2 > Num3) { <br>
+        console.log("Number Two Is maximum", Num2); <br>
+        alert("Number Two Is maximum " + Num2); <br>
+        } <br>
+
+
+        else if (Num3 > Num2 && Num3 > Num1) { <br>
+        console.log("Number Three Is maximum", Num3); <br>
+        alert("Number Three Is maximum " + Num3); <br>
+        }<br>
+
+        else if (Num1 == Num2 && Num1 > Num3) { <br>
+        console.log("Both One & Two No is Equal " + " " + Num1 + " " + Num2 + " Number Three is Minimum No One & Two " +
+        Num3); <br>
+        alert("Both One & Two No is Equal " + " " + Num1 + " " + Num2 + " Number Three is Minimum No One & Two " +
+        Num3); <br>
+        }<br>
+
+        else if (Num1 < Num2 && Num2==Num3) { <br>
+            console.log("Both Two & Three No is Equal " + " " + Num2 + " " + Num3 + " Number One is Minimum No One & Two
+            " + Num1); <br>
+            alert("Both Two & Three No is Equal " + " " + Num2 + " " + Num3 + " Number One is Minimum No Two & Three " +
+            Num1); <br>
+            } <br>
+
+            else if (Num1 == Num2 && Num1 == Num3 && Num2 == Num3) { <br>
+
+            console.log("All Number is Equal" + " " + Num1 + " " + Num2 + " " + Num3); <br>
+            alert("All Number is Equal" + " " + Num1 + " " + Num2 + " " + Num3); <br>
+            } <br>
+            else { <br>
+            console.log("Please Again Your Enter Numbers "); <br>
+
+            } <br>
+            } <br>
+
+    </div>
+
+    <br>
+    <button onclick="myQuestion2()">Click Me</button>
+    <hr>
+    <!-- ---------------------------------------------------  -->
+
+    <h1>3. Write a ts program to check whether a number is negative, positive or zero.</h1>
+    <div class="Question_show">
+
+        var userinputNum1: string | null = prompt("Enter Number A"); <br>
+        var userinputNum2: string | null = prompt("Enter Number B"); <br>
+        if (userinputNum1 && userinputNum2) { <br>
+        var Num1: number = parseInt(userinputNum1); <br>
+        var Num2: number = parseInt(userinputNum2); <br>
+
+        if (Num1 > 0 && Num2 > 0) { <br>
+        console.log("Number is Postive "); <br>
+        alert(`Number ${Num1} & ${Num2} is Postive`); <br>
+        } <br>
+        else if (Num1 < 0 && Num2 < 0) { <br>
+            console.log("Number is Negative "); <br>
+            alert(`Number ${Num1} & ${Num2} is Negative`); <br>
+            } <br>
+
+            else if (Num1 == 0 && Num2 == 0) { <br>
+            console.log("Number is Zero "); <br>
+            alert(`Number ${Num1} & ${Num2} is Zero`); <br>
+            } <br>
+            else if ((Num1 > 0 && Num2 < 0) || (Num1 < 0 && Num2> 0)) { <br>
+                console.log("Both Number is Postive And Negative "); <br>
+                alert(`Both Number ${Num1} & ${Num2} is Postive And Negative`); <br>
+                } <br>
+                <br>
+                else if ((Num1 >= 0 && Num2 > 0) || (Num1 > 0 && Num2 >= 0)){ <br>
+                console.log(" Number is Postive"); <br>
+                alert(` Number A ${Num1} & B ${Num2} is Postive Number`); <br>
+                } <br>
+                else if ((Num1 <= 0 && Num2 < 0) || (Num1 < 0 && Num2 <=0)){ <br>
+                    console.log(" Number is Negative"); <br>
+                    alert(` Number A ${Num1} & B ${Num2} is Negative Number`); <br>
+                    } <br>
+
+                    else{ <br>
+                    alert("Please Enter Your Again Number") <br>
+                    } <br>
+                    } <br>
+    </div>
+
+    <br>
+    <button onclick="myQuestion3()">Click Me</button>
+    <hr>
+
+
+
+    <!-- ---------------------------------------------------  -->
+
+    <h1>
+        <h1>4. Write a ts program to check whether a number is divisible by 5 and 11 or not.</h1>
+        <div class="Question_show">
+            var userinputNum1 :string | null = prompt("Enter Your Number A 5","5"); <br>
+            var userinputNum2 :string | null = prompt("Enter Your Number A 11","11"); <br>
+
+
+            if (userinputNum1 && userinputNum2) { <br>
+            var Num1:number = parseInt(userinputNum1); <br>
+            var Num2:number = parseInt(userinputNum2); <br>
+
+            if ((Num1/5==1 && Num2 /11==1)) { <br>
+            console.log("a number is divisible by 5 and 11 "); <br>
+            alert(`A number ${Num1} is divisible by 5 and 11 `); <br>
+            } <br>
+            else{ <br>
+            console.log("or Not number is divisible by 5 and 11 "); <br>
+            alert(`or Not number ${Num1} & ${Num2} is divisible by 5 and 11 `); <br>
+            } <br>
+            } <br>
+        </div>
+
+        <br>
+        <button onclick="myQuestion4()">Click Me</button>
+        <hr>
+
+        <!-- ---------------------------------------------------  -->
+        <h1>5. Write a ts program to check whether a number is even or odd.</h1>
+        <div class="Question_show">
+            var userinputNum1 :string | null = prompt("Enter Your Number even and odd "); <br>
+
+            if (userinputNum1) { <br>
+            var Num1:number = parseInt(userinputNum1); <br>
+            <br>
+            if (Num1%2 ==1) { <br>
+            console.log("the number is odd. "); <br>
+            alert(`the number is odd. ${Num1}`); <br>
+            } <br>
+            <br>
+            else{ <br>
+            console.log("the number is Even. "); <br>
+            alert(`the Number ${Num1} is Even. `); <br>
+            } <br>
+            <br>
+
+            } <br>
+        </div>
+
+        <br>
+        <button onclick="myQuestion5()">Click Me</button>
+        <hr>
+
+        <!-- ---------------------------------------------------  -->
+        <h1>6. Write a ts program to check whether a year is leap year or not.</h1>
+        <p>The complete list of leap years in the first half of the 21st century is therefore</p>
+        <p>2000, 2004, 2008, 2012, 2016, 2020, 2024, 2028, 2032, 2036, 2040, 2044, and 2048.</p>
+        <div class="Question_show">
+            var userinputNum1 :string | null = prompt("Enter Your Year" , " 2000 "); <br>
+
+            if (userinputNum1) { <br>
+            var year:number = parseInt(userinputNum1); <br>
+
+            var leapYear :any = new Date(year, 1, 29).getDate() === 29; <br>
+
+            if(leapYear) <br>
+            { <br>
+            alert(`${year} is a leap Year`); <br>
+            } <br>
+            else{ <br>
+            alert(`${year} is not a leap Year`); <br>
+            } <br>
+
+            } <br>
+
+        </div>
+        <br>
+        <button onclick="myQuestion6()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+
+        <!-- ---------------------------------------------------  -->
+        <h1>7. Write a ts program to check whether a character is alphabet or not..</h1>
+        <div class="Question_show">
+            var latter: string | null = prompt("Enter Your alphabet A to Z", "A"); <br>
+
+            if (latter?.length == 1) { <br>
+
+            if ((latter >= 'a' && latter <= 'z' ) || (latter>= 'A' && latter <= 'Z' )) { <br>
+                    alert(`${latter} is a alphabet `); <br>
+                    } <br>
+                    else { <br>
+                    alert(`${latter} is Not a alphabet `); <br>
+                    } <br>
+                    }
+                    else { <br>
+                    alert(`please Enter One Character ${latter}`); <br>
+                    }
+        </div>
+        <br>
+        <button onclick="myQuestion7()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+
+
+        <h1>8. Write a ts program to input any alphabet and check whether it is vowel or consonant.</h1>
+        <div class="Question_show">
+            var latter: string | null = prompt("Enter Your vowel or consonant"); <br>
+            var words: any = latter?.toLowerCase(); <br>
+            if (words?.length == 1) { <br>
+
+            if((words =='a') || (words =='e') || (words =='i') || (words =='o') || (words =='u')){ <br>
+            alert(`it is vowel ${words}`) <br>
+            } <br>
+            else{ <br>
+            alert(`it is consonant ${words}`) <br>
+            } <br>
+            } <br>
+        </div>
+        <br>
+        <button onclick="myQuestion8()">Click Me</button>
+        <hr>
+
+
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>9. Write a ts program to input any character and check whether it is alphabet, digit or special character.
+        </h1>
+        <div class="Question_show">
+            var latter: string | null = prompt("Enter Your alphabet , digit or special character"); <br>
+            var words: any = latter?.toLowerCase(); <br>
+
+
+            if(words >= 'a' && words <= 'z' ){ <br>
+                alert(`${words} Alphabet Character `) <br>
+                } <br>
+                <br>
+                else if(words >= '0' && words <= '9' ){ <br>
+                    alert(`${words} Digit `) <br>
+                    } <br>
+                    <br>
+                    else if((words >= 'a' || words >= '0') && (words <= 'z' || words <='9' )){ <br>
+                        alert(`${words} alphabet & Digit `) <br>
+                        } <br>
+                        <br>
+                        else{ <br>
+                        alert(`${words} is special Character `) <br>
+                        } <br>
+
+        </div>
+        <br>
+        <button onclick="myQuestion9()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+
+        <h1>10. Write a ts program to check whether a character is uppercase or lowercase alphabet.</h1>
+        <div class="Question_show">
+            var latter: string | null = prompt("Enter Your uppercase or lowercase alphabet"); <br>
+            <br>
+            if (latter === latter?.toUpperCase()) { <br>
+            alert(`${latter} is Uppercase alphabet`); <br>
+            } <br>
+            else if (latter === latter?.toLowerCase()) { <br>
+            alert(`${latter} is Lowercase alphabet`); <br>
+            } <br>
+            else{ <br>
+            alert(`${latter} is Uppercase && Lowercase alphabet`); <br>
+            } <br>
+
+        </div>
+        <br>
+        <button onclick="myQuestion10()">Click Me</button>
+        <hr>
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>11. Write a ts program to input week number and print week day.</h1>
+        <div class="Question_show">
+            var userinputNum1: string | null = prompt("Please enter week number between 1-7."); <br>
+
+            if (userinputNum1) { <br>
+            <br>
+            var Num:number = parseInt(userinputNum1); <br>
+            if (Num == 1) { <br>
+            alert(`${Num} Monday`); <br>
+            } <br>
+            else if (Num == 2) { <br>
+            alert(`${Num} Tuesday`); <br>
+            } <br>
+            else if (Num == 3) { <br>
+            alert(`${Num} Wednesday`); <br>
+            } <br>
+            else if (Num == 4) { <br>
+            alert(`${Num} Thursday`); <br>
+            } <br>
+            else if (Num == 5) { <br>
+            alert(`${Num} Friday`); <br>
+            } <br>
+            else if (Num == 6) { <br>
+            alert(`${Num} Saturday`); <br>
+            } <br>
+            else if (Num == 7) { <br>
+            alert(`${Num} Sunday`); <br>
+            } <br>
+            else { <br>
+            alert(`${Num} Please enter week number between 1-7`); <br>
+            } <br>
+            }
+        </div>
+        <br>
+        <button onclick="myQuestion11()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>12. Write a ts program to input month number and print number of days in that month.</h1>
+        <div class="Question_show">
+        </div>
+        <br>
+        <button onclick="myQuestion12()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>13. Write a ts program to count total number of notes in given amount.</h1>
+        <div class="Question_show">
+        </div>
+        <br>
+        <button onclick="myQuestion13()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>14. Write a ts program to input angles of a triangle and check whether triangle is valid or not.</h1>
+        <div class="Question_show">
+            var userinputNum1: string | null = prompt("Please Enter Your No A."); <br>
+            var userinputNum2: string | null = prompt("Please Enter Your No B."); <br>
+            var userinputNum3: string | null = prompt("Please Enter Your No C."); <br>
+            <br>
+            if (userinputNum1 && userinputNum2 && userinputNum3) { <br>
+            <br>
+            var Num1:number = parseInt(userinputNum1); <br>
+            var Num2:number = parseInt(userinputNum2); <br>
+            var Num3:number = parseInt(userinputNum3); <br>
+            <br>
+            var sumThree:number = Num1 + Num2 + Num3; <br>
+            <br>
+            if (sumThree === 180 && Num1 > 0 && Num2 > 0 && Num3 >0) { <br>
+            alert(`triangle is equal to ${sumThree} degrees`); <br>
+            } <br>
+            else{ <br>
+            alert(` ${sumThree} Not a triangle is not equal to 180 degrees`); <br>
+            } <br>
+            } <br>
+        </div>
+        <br>
+        <button onclick="myQuestion14()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>15. Write a ts program to input all sides of a triangle and check whether triangle is valid or not.</h1>
+        <p>A triangle is valid if sum of its two sides is greater than the third side. <br>
+            Means if a, b, c are three sides of a triangle. <br>
+            Then the triangle is valid if all three conditions are satisfied <br>
+            a + b > c <br>
+            a + c > b <br>
+            b + c > a</p> <br>
+        <br>
+        <div class="Question_show">
+
+            var userinputNum1: string | null = prompt("Please Enter Your No A."); <br>
+            var userinputNum2: string | null = prompt("Please Enter Your No B."); <br>
+            var userinputNum3: string | null = prompt("Please Enter Your No C."); <br>
+            <br>
+            if (userinputNum1 && userinputNum2 && userinputNum3) { <br>
+            <br>
+            var a:number = parseInt(userinputNum1); <br>
+            var b:number = parseInt(userinputNum2); <br>
+            var c:number = parseInt(userinputNum3); <br>
+
+            if (a + b > c && a + c > b && b + c > a) { <br>
+            alert(`A triangle is valid ${a} ${b} ${c}`) <br>
+            } <br>
+            else{ <br>
+            alert('A triangle is Not valid') <br>
+            } <br>
+            <br>
+            } <br>
+
+        </div>
+        <br>
+        <button onclick="myQuestion15()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>16. Write a ts program to check whether the triangle is equilateral, isosceles or scalene triangle.</h1>
+        <div class="Question_show">
+
+            var userinputNum1: string | null = prompt("Please Enter Your No A."); <br>
+            var userinputNum2: string | null = prompt("Please Enter Your No B."); <br>
+            var userinputNum3: string | null = prompt("Please Enter Your No C."); <br>
+            <br>
+            if (userinputNum1 && userinputNum2 && userinputNum3) { <br>
+            <br>
+            var a:number = parseInt(userinputNum1); <br>
+            var b:number = parseInt(userinputNum2); <br>
+            var c:number = parseInt(userinputNum3); <br>
+            <br>
+            if (a == b && b == c) { <br>
+            alert(`Equilateral Triangle ${a} ${b} ${c}`) <br>
+            } <br>
+            if (a == b && b == c && c == a) { <br>
+            alert(`Isosceles Triangle${a} ${b} ${c}`) <br>
+            } <br>
+            else{ <br>
+            alert('Scalene Triangle') <br>
+            } <br>
+            <br>
+            } <br>
+        </div>
+        <br>
+        <button onclick="myQuestion16()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>17. Write a ts program to find all roots of a quadratic equation.</h1>
+        <div class="Question_show">
+
+           / / take input from the user <br>
+    var aa: string | null = prompt("Enter the first number: "); <br>
+    let bb: string | null = prompt("Enter the second number: "); <br>
+    let cc: string | null = prompt("Enter the third number: "); <br>
+ <br>
+    if (aa && bb && cc) { <br>
+        var a: number = parseInt(aa); <br>
+        var b: number = parseInt(bb); <br>
+        var c: number = parseInt(cc); <br>
+        // calculate discriminant <br>
+        let discriminant = b * b - 4 * a * c; <br>
+ <br>
+        // condition for real and different roots <br>
+        if (discriminant > 0) { <br>
+            var root1 = (-b + Math.sqrt(discriminant)) / (2 * a); <br>
+            var root2 = (-b - Math.sqrt(discriminant)) / (2 * a); <br>
+ <br>
+            // result <br>
+            console.log(`The roots of quadratic equation are ${root1} and ${root2}`); <br>
+            alert(`The roots of quadratic equation are ${root1} and ${root2}`); <br>
+        } <br>
+ <br>
+        // condition for real and equal roots <br>
+        else if (discriminant == 0) { <br>
+            root1 = root2 = -b / (2 * a); <br>
+ <br>
+            // result <br>
+            console.log(`The roots of quadratic equation are ${root1} and ${root2}`); <br>
+            alert(`The roots of quadratic equation are ${root1} and ${root2}`); <br>
+        } <br>
+ <br>
+        // if roots are not real <br>
+        else { <br>
+            let realPart = (-b / (2 * a)).toFixed(2); <br>
+            let imagPart = (Math.sqrt(-discriminant) / (2 * a)).toFixed(2); <br>
+ <br>
+            // result <br>
+            console.log( <br>
+                `The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i` <br>
+            ); <br>
+ <br>
+            alert(`The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`); <br>
+ <br>
+        } <br>
+
+        </div>
+        <br>
+        <button onclick="myQuestion17()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>18. Write a ts program to calculate profit or loss.</h1>
+        <div class="Question_show">
+            var userinputNum1: string | null = prompt("Please Enter Your Cost Price."); <br>
+            var userinputNum2: string | null = prompt("Please Enter Your Selling Price"); <br>
+ <br>
+
+            if (userinputNum1 && userinputNum2) { <br>
+ <br>
+            var cost_price:number = parseInt(userinputNum1); <br>
+            var selling_pric:number = parseInt(userinputNum2); <br>
+            if (cost_price < selling_pric) { alert(`Prfit ${selling_pric - cost_price }`) } else if (cost_price> <br>
+                selling_pric) { <br>
+                alert(`Loss ${cost_price - selling_pric}`) <br>
+                } <br>
+                else{ <br>
+                alert("no profit no loss") <br>
+                } <br>
+                } <br>
+        </div>
+        <br>
+        <button onclick="myQuestion18()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>19. Write a ts program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. <br> Calculate percentage and grade according to following:
+   <br>         Percentage >= 90% : Grade A  <br>
+            Percentage >= 80% : Grade B <br>
+            Percentage >= 70% : Grade C <br>
+            Percentage >= 60% : Grade D <br>
+            Percentage >= 40% : Grade E <br>
+            Percentage < 40% : Grade F.</h1>
+        <div class="Question_show">
+            var aa: string | null = prompt("Enter the Marks Physices ");  <br> 
+            let bb: string | null = prompt("Enter the Marks Chemistry "); <br> 
+            let cc: string | null = prompt("Enter the Marks Biology"); <br> 
+            let dd: string | null = prompt("Enter the Marks Mathematics  "); <br> 
+            let ee: string | null = prompt("Enter the Marks Computer "); <br> 
+         <br> 
+            if (aa && bb && cc && dd && ee) { <br> 
+                var a: number = parseInt(aa); <br> 
+                var b: number = parseInt(bb); <br> 
+                var c: number = parseInt(cc); <br> 
+                var d: number = parseInt(dd); <br> 
+                var e: number = parseInt(ee); <br> 
+         <br> 
+                var sum:number = ((a+b+c+d+e)/5); <br> 
+         <br> 
+                if(sum >= 90) <br> 
+                { <br> 
+                    alert(`Grade A Percentage ${sum} %`); <br> 
+                } <br> 
+                else if(sum >= 80) <br> 
+                { <br> 
+                    alert(`Grade B  Percentage ${sum} %`); <br> 
+                } <br> 
+                else if(sum >= 70) <br> 
+                { <br> 
+                    alert(`Grade C Percentage ${sum} %`); <br> 
+                } <br> 
+                else if(sum >= 60) <br> 
+                { <br> 
+                    alert(`Grade D Percentage ${sum} %`); <br> 
+                } <br> 
+                else if(sum >= 40) <br> 
+                { <br> 
+                    alert(`Grade E Percentage ${sum} %`); <br> 
+                } <br> 
+                else <br> 
+                { <br> 
+                    alert(`Grade F Percentage ${sum} %`); <br> 
+                } <br> 
+             <br> 
+            } <br> 
+        </div>
+        <br>
+        <button onclick="myQuestion19()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>20. Write a ts program to input basic salary of an employee and calculate its Gross salary according to following: <br>
+            Basic Salary <= 10000 : HRA = 20%, DA = 80%  <br>
+            Basic Salary <= 20000 : HRA = 25%, DA = 90% <br>
+            Basic Salary > 20000 : HRA = 30%, DA = 95%</h1>
+        <div class="Question_show">
+            var salar: string | null = prompt("Enter the basic salary of the Employee ");  <br>
+ <br>
+            if (salar) { <br>
+                var salary: number = parseInt(salar); <br>
+         <br>
+                if (salary <= 10000) { <br>
+                    var da: number = salary * 20 / 100; <br>
+                    var hra: number = salary * 80 / 100; <br>
+                    var gross: number = salary + da + hra; <br>
+                    alert(`The gross salary of the Employee is ${gross}`); <br>
+                } <br>
+                if (salary <= 20000) { <br>
+                    da = salary * 25 / 100; <br>
+                    hra = salary * 90 / 100; <br>
+                    gross = salary + da + hra; <br>
+                    alert(`The gross salary of the Employee is ${gross}`); <br>
+         <br>
+                } <br>
+                else if (salary > 20000) { <br>
+                    da = salary * 30 / 100; <br>
+                    hra = salary * 95 / 100; <br>
+                    gross = salary + da + hra; <br>
+                    alert(`The gross salary of the Employee is ${gross}`); <br>
+         <br>
+                } <br>
+                else { <br>
+                    alert(`You have No Salary`); <br>
+         <br>
+                } <br>
+        </div>
+        <br>
+        <button onclick="myQuestion20()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <h1>21. Write a ts program to input electricity unit charges and calculate total electricity bill according to the given condition:
+           <br> For first 50 units Rs. 0.50/unit <br>
+            For next 100 units Rs. 0.75/unit <br>
+            For next 100 units Rs. 1.20/unit <br>
+            For unit above 250 Rs. 1.50/unit <br>
+            An additional surcharge of 20% is added to the bill</h1>
+        <div class="Question_show">
+
+            var uni: string | null = prompt("Enter Total Units "); <br>
+ <br>
+    if (uni) { <br>
+        var unit: number = parseInt(uni); <br>
+        var amount: number; <br>
+        var  total_amount : number; <br>
+        var surcharge: number; <br>
+ <br>
+        if (unit <= 50) { <br>
+            amount = unit * 0.50; <br>
+            surcharge = amount * 0.20; <br>
+	        total_amount = amount + surcharge; <br>
+            alert(`Your Electric ", ${total_amount}`) <br>
+        } <br>
+ <br>
+        else if (unit <= 150) { <br>
+            amount = 25 + (unit - 50) * 0.75; <br>
+            surcharge = amount * 0.20; <br>
+	        total_amount = amount + surcharge; <br>
+            alert(`Your Electric ", ${total_amount}`) <br>
+        } <br>
+        else if (unit <= 250) { <br>
+            amount = 100 + (unit - 150) * 1.20; <br>
+            surcharge = amount * 0.20; <br>
+	        total_amount = amount + surcharge; <br>
+            alert(`Your Electric ", ${total_amount}`) <br>
+        } <br>
+        else { <br>
+            amount = 220 + (unit - 250) * 1.50; <br>
+            surcharge = amount * 0.20; <br>
+	        total_amount = amount + surcharge; <br>
+            alert(`Your Electric ", ${total_amount}`) <br>
+        } <br>
+ <br>
+    } <br>
+
+        </div>
+        <br>
+        <button onclick="myQuestion21()">Click Me</button>
+        <hr>
+        <!-- ---------------------------------------------------  -->
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <!-- <h1>5. Write a ts program to check whether a number is even or odd.</h1>
+        <div class="Question_show">
+        </div>
+        <br>
+        <button onclick="myQuestion5()">Click Me</button>
+        <hr> -->
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <!-- <h1>5. Write a ts program to check whether a number is even or odd.</h1>
+        <div class="Question_show">
+        </div>
+        <br>
+        <button onclick="myQuestion5()">Click Me</button>
+        <hr> -->
+        <!-- ---------------------------------------------------  -->
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <!-- <h1>5. Write a ts program to check whether a number is even or odd.</h1>
+        <div class="Question_show">
+        </div>
+        <br>
+        <button onclick="myQuestion5()">Click Me</button>
+        <hr> -->
+        <!-- ---------------------------------------------------  -->
+
+        <!-- ---------------------------------------------------  -->
+        <!-- ---------------------------------------------------  -->
+        <!-- <h1>5. Write a ts program to check whether a number is even or odd.</h1>
+        <div class="Question_show">
+        </div>
+        <br>
+        <button onclick="myQuestion5()">Click Me</button>
+        <hr> -->
+        <!-- ---------------------------------------------------  -->
+
+
+
+
+
+        <script src="app.js"></script>
+
+</body>
+
+</html>
